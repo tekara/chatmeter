@@ -1,0 +1,15 @@
+<div class="areaBack text-center">
+	<h3>What is your opinion on Troll 2?</h3>
+	<hr>
+	<form>	
+		<div id="userInput" class="formGroup">
+			<label class="normalWeight">Characters left : {{limit - review.length}}</label>
+			<textarea rows="5" cols="40" maxlength="100" name="review" [(ngModel)]="review" placeholder="Troll 2 is wonderful because..."></textarea>
+		</div>
+
+		<div>
+			<p class="error">{{error}}</p>
+			<button type="submit" class="btn btn-primary" (click)='submit()'>Submit Review</button>
+		</div>
+	</form>
+</div>
